@@ -4,4 +4,4 @@
   tasks:
     - name: Print OS info
       ansible.builtin.package:
-        name: apchae2
+        name: apachae2
