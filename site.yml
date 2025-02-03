@@ -1,8 +1,8 @@
 ---
 - hosts: web_servers
-  sudo: yes
   become: true
   tasks:
     - name: Print OS info
+      sudo: yes
       ansible.builtin.package:
         name: apchae2
