@@ -2,6 +2,12 @@
   become: true
   tasks:
 
+  - name: Add FQDN to host file
+    lineinfile:
+      path: /etc/hosts
+      insertafter: EOF
+      line: 
+
   - name: Install and Enable IPA
     apt:
       name: freeipa-client oddjob-mkhomedir
