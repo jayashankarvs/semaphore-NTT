@@ -6,7 +6,7 @@
       command: cd /opt/observium
 
     - name: Task 2 - Create a directory
-      command: sudo svn cleanup
+      command: svn cleanup
 
     - name: Task 3 - Start a service
-      command: sudo svn update
+      command: svn update
