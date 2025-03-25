@@ -1,6 +1,6 @@
 ---
 - name: Example Ansible Playbook to run 3 command-line tasks on Linux
-- hosts: observium
+- hosts: all
   become: true
   tasks:
     - name: Task 1 - cd to correct DIR
