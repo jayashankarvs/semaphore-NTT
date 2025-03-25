@@ -1,0 +1,13 @@
+---
+- name: Example Ansible Playbook to run 3 command-line tasks on Linux
+- hosts: observium
+  become: true
+  tasks:
+    - name: Task 1 - cd to correct DIR
+      command: cd /opt/observium
+
+    - name: Task 2 - Create a directory
+      command: sudo svn cleanup
+
+    - name: Task 3 - Start a service
+      command: sudo svn update
