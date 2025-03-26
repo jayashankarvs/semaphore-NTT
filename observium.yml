@@ -1,7 +1,6 @@
 ---
 - hosts: all
   become: true
-  sudo: yes
   sudo_user: lee.kendrick
   tasks:
     - name: Task 1 - cd to correct DIR
