@@ -1,6 +1,7 @@
 ---
 - hosts: all
-  become: true
+  remote_user: lee.kendrick
+  become_method: sudo
   tasks:
     - name: Task 1 - cd to correct DIR
       command: cd /opt/observium
