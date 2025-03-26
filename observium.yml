@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  remote_user: lee.kendrick
+  become_user: lee.kendrick
   become_method: sudo
   tasks:
     - name: Task 1 - cd to correct DIR
