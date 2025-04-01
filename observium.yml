@@ -6,9 +6,9 @@
       command: cd /opt/observium
 
     - name: Task 2 - Create a directory
+      shell:
       command: sudo svn cleanup
-      args:
-        chdir: /opt/observium/
+      chdir: /opt/observium/
 
     - name: Task 3 - Start a service
       command: sudo svn update
