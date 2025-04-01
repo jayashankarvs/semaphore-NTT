@@ -1,13 +1,13 @@
 ---
 - hosts: all
-  become: true
+  become: false
   tasks:
     - name: Task 1 - cd to correct DIR
       command: cd /opt/observium
 
     - name: Task 2 - Create a directory
       shell:
-      command: sudo svn cleanup
+      cmd: pwd
       chdir: /opt/observium/
 
     - name: Task 3 - Start a service
