@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  become: true
+  become_user: lee.kendrick
   tasks:
     - name: Task 1 - cd to correct DIR
       command: cd /opt/observium
